@@ -2,16 +2,16 @@ package br.com.fabriciocurvello.appcalculadoracimatecjava;
 
 public class Calculadora {
 
-    public Double calcular(Double a, Double b, String operacao) {
+    public Double calcular(Double n1, Double n2, String operacao) {
         switch (operacao) {
             case "Adição":
-                return a + b;
+                return n1 + n2;
             case "Subtração":
-                return a - b;
+                return n1 - n2;
             case "Multiplicação":
-                return a * b;
+                return n1 * n2;
             case "Divisão":
-                return b != 0 ? a / b : Double.NaN;
+                return n2 != 0 ? n1 / n2 : Double.NaN;
             default:
                 return Double.NaN;
         }
