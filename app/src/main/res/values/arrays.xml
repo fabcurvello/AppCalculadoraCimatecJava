@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="operacoes">
+        <item>Adição</item>
+        <item>Subtração</item>
+        <item>Multiplicação</item>
+        <item>Divisão</item>
+    </string-array>
+</resources>
