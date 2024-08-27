@@ -16,11 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etNumero1;
-    EditText etNumero2;
-    Spinner spOperacao;
-    Button btCalcular;
-    TextView tvResultado;
+    private EditText etNumero1;
+    private EditText etNumero2;
+    private Spinner spOperacao;
+    private Button btCalcular;
+    private TextView tvResultado;
+
+    private Calculadora calculadora = new Calculadora();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,21 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     String operacao = spOperacao.getSelectedItem().toString();
 
                     if ((num1 != null) && (num2 != null)) {
-                        double resultado = 0.0;
-                        switch (operacao) {
-                            case "Adição":
-                                resultado = num1 + num2;
-                                break;
-                            case "Subtração":
-                                resultado = num1 - num2;
-                                break;
-                            case "Multiplicação":
-                                resultado = num1 * num2;
-                                break;
-                            case "Divisão":
-                                resultado = num1 / num2;
-                                break;
-                        }
+                        Double resultado = calculadora.calcular(num1, num2, operacao);
                         tvResultado.setText(String.valueOf(resultado));
                     } else {
                         tvResultado.setText(String.valueOf("Entrada inválida."));
