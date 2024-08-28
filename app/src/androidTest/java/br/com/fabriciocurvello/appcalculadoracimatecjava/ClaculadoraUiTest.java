@@ -32,6 +32,8 @@ public class ClaculadoraUiTest {
 
     }
 
+    //Elabore testes Ui para subtração, multiplicação e divisão
+
     public void pausa(long segundos) {
         try {
             Thread.sleep(segundos * 1000);
