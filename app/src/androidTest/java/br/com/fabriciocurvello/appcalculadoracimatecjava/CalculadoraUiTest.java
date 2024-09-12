@@ -31,7 +31,7 @@ public class CalculadoraUiTest {
 
     }
 
-    //Elabore testes Ui para subtração, multiplicação e divisão
+    //Elabore testes de integração para subtração, multiplicação e divisão
 
     public void pausa(long segundos) {
         try {
