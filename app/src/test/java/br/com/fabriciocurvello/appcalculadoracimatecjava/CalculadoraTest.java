@@ -12,4 +12,4 @@ public class CalculadoraTest {
         Assert.assertEquals(5.0,resultado, 0.01);
     }
 }
-// Elabore os testes unitários para subtração, multiplicação e divisão.
+// EXERCÍCIO: Elabore os testes unitários para subtração, multiplicação e divisão.

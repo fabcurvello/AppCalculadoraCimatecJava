@@ -5,10 +5,13 @@ import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+@RunWith(AndroidJUnit4.class)
 public class CalculadoraUiTest {
 
     @Rule
@@ -31,8 +34,6 @@ public class CalculadoraUiTest {
 
     }
 
-    //Elabore testes de integração para subtração, multiplicação e divisão
-
     public void pausa(long segundos) {
         try {
             Thread.sleep(segundos * 1000);
@@ -40,6 +41,8 @@ public class CalculadoraUiTest {
             throw new RuntimeException(e);
         }
     }
+
+    //EXERCÍCIO: Elabore testes de UI para subtração, multiplicação e divisão
 }
 
 
