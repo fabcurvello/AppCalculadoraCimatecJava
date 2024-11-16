@@ -18,7 +18,7 @@ public class CalculadoraUiTest {
     public ActivityScenarioRule<MainActivity> activityRule = new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void AdicaoTestUi() {
+    public void adicaoTestUi() {
         Espresso.onView(ViewMatchers.withId(R.id.et_numero1)).perform(ViewActions.replaceText("2"));
         pausa(1);
         Espresso.onView(ViewMatchers.withId(R.id.et_numero2)).perform(ViewActions.replaceText("3"));
